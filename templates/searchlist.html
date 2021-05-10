@@ -1,0 +1,38 @@
+<html>    
+    <head>    
+        <title>{{t}}</title>    
+        <link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/style.css')}}" >    
+    </head>    
+<body>    
+    <h1>{{h}}</h1>    
+    <hr>    
+        {% if collection[0] %}    
+    <h3>Result of the Search : newcollect List</h3>    
+    <table>    
+        <tr id="row">    
+           <td class="status">Status</td>    
+            <td class="name">Task Name</td>    
+            <td class="desc">Task Description</td>    
+            <td class="date">Date</td>    
+            <td class="pr">Project</td>    
+        <td class="func">Delete</td>    
+        <td class="func">Modify</td>    
+        </tr>    
+        {% for newcollect in collection %}    
+        <tr class="datas">    
+            <td><a href="./done?_id={{ newcollect['_id'] }}"><input type="image" src="static/images/{{newcollect['done']}}.png" alt="Submit ME"></a></td>    
+            <td class="name">{{ newcollect["name"] }}</td>    
+            <td class="desc">{{ newcollect["desc"] }}</td>    
+            <td class="date">{{ newcollect["date"] }}</td>    
+            <td class="pr">{{ newcollect["pr"] }}</td>    
+            <td class="func1"><a href="./remove?_id={{ newcollect['_id'] }}"><button type="submit">DELETE</button></a></td>    
+            <td class="func1"><a href="./update?_id={{ newcollect['_id'] }}"><button type="submit">EDIT</button></a></td>    
+        </tr>    
+        {% endfor %}    
+    {% else %}    
+        <h4>No Result Found !!</h4>    
+    {% endif %}    
+    </table>    
+   <a href="/">Return to TaskList</a>    
+</body>    
+</html>  

@@ -1,0 +1,89 @@
+h1{    
+    /*  font-family:"Arial Black", Gadget, sans-serif;*/    
+        font-family:"Times New Romans",Gadget, sans-serif;    
+    }    
+    cuerpo{
+        color:negro;    
+        color de fondo:blanco;    
+    margenizquierdo:10px;    
+    margenderecho:10px;    
+    }    
+    tabla{
+        ancho:95%;    
+        colapso fronterizo:colapso;    
+        tabla-diseño:fijo;    
+    }    
+    Td
+    {    
+        frontera: rgba(224, 119, 70, 1) 2px sólido;    
+    palabra-envoltura:break-word;
+    }    
+    mesa#close{    
+
+        tabla-diseño:predeterminado;    
+        border-collapse:separate;
+        espaciado fronterizo: 5px 5px;    
+        frontera:ninguno;    
+        alineación vertical:parte superior;    
+    }    
+    mesa. ninguno    
+    {    
+        frontera:ninguno;    
+        alineación vertical:parte superior;    
+    }    
+    mesa. ninguno td
+    {    
+        frontera: ninguno;    
+    }    
+    tr.row td{    
+        text-decoration:cursa;    
+    }    
+    th.status{    
+        ancho:5%;    
+    }    
+    th.name{    
+        ancho:20%;    
+    }    
+    th.des{    
+        ancho:40%;    
+        relleno:5px 5px 5px 5px 5px;    
+    }    
+    th.date{    
+        ancho:8%;    
+    }    
+    th.pr{    
+        ancho:7%;    
+    }    
+    th.func1{    
+       ancho:6%;    
+    }    
+    th.func2{    
+       ancho:5%;    
+    }    
+    input[type=submit] {    
+        ancho: 20em; altura: 2em;    
+    }    
+    ul {    
+        tipo de estilo de lista: ninguno;    
+       margen: 0;    
+       relleno: 0;    
+       desbordamiento: oculto;    
+       color de fondo  #333;    
+    }    
+    .li {    
+        flotador: izquierda;    
+    }    
+    li a {    
+        pantalla: bloque;    
+        color: blanco;    
+       texto-alinear: centro;    
+       relleno: 14px 16px;    
+       text-decoration: ninguno;    
+    }    
+    a.active {    
+       color de fondo: #4CAF50;    
+    }    
+    /* Cambie el color del enlace a #111 (negro) al pasar el cursor */    
+    li a:hover {    
+        background-color: #111;    
+    }   

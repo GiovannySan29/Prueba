@@ -1,0 +1,5 @@
+img.emoji {      
+    /* Anula cualquier estilo img para asegurar que los Emojis se muestren en línea       */
+    margen: 0px !importante;      
+    pantalla: en línea !importante;      
+}   
